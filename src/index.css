@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-odra-red: #C8484A;
+  --color-odra-red-dark: #A83638;
+  --color-odra-charcoal: #1A1614;
+  --color-odra-dark: #120F0E;
+  --color-odra-bone: #F4EDE3;
+  --color-odra-bone-light: #FAF6F0;
+  --color-odra-gold: #C9A961;
+  --color-odra-border: #E8DFD3;
+  
+  --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  --color-red: #C8484A;
+  --color-ink: #1A1614;
+  --color-black: #1A1614;
+  --color-bone: #F4EDE3;
+  --color-gold: #C9A961;
+  --color-white: #ffffff;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: #FAFAFA;
+}
+
+h1, h2, h3, h4, h5, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+/* Reference marquee keyframes */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

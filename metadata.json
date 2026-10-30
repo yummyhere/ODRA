@@ -1,0 +1,8 @@
+{
+  "name": "Odra Deli & Wholesale Meat",
+  "description": "Retail counter and commercial wholesale meat supplier in Mississauga, Ontario. Hand-trimmed Canadian beef, poultry, European deli specialties, and food service distribution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
