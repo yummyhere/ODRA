@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Phone, ShieldCheck, Award, Truck } from 'lucide-react';
 import { useInquiry } from '../context/InquiryContext';
+import { images } from '../assets/images';
 
 interface HeroSlide {
   eyebrow: string;
@@ -58,7 +59,7 @@ export const HeroSection: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center transition-all duration-1000 transform scale-105"
         style={{
-          backgroundImage: `url('/src/assets/images/hero_butcher_counter_1793338241942.jpg')`,
+          backgroundImage: `url('${images.butcherCounter}')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-[#1A1614] via-[#1A1614]/75 to-[#1A1614]/65"></div>

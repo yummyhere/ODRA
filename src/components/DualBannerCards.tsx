@@ -1,6 +1,7 @@
 import React from 'react';
 import { useInquiry } from '../context/InquiryContext';
 import { ArrowRight } from 'lucide-react';
+import { images } from '../assets/images';
 
 export const DualBannerCards: React.FC = () => {
   const { setActiveNavTab, setActiveCategoryFilter } = useInquiry();
@@ -14,7 +15,7 @@ export const DualBannerCards: React.FC = () => {
             {/* Background Image with Scrim */}
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-              style={{ backgroundImage: `url('/src/assets/images/european_deli_meats_1793338242936.jpg')` }}
+              style={{ backgroundImage: `url('${images.deliMeats}')` }}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A1614] via-[#1A1614]/70 to-transparent"></div>
             </div>
@@ -52,7 +53,7 @@ export const DualBannerCards: React.FC = () => {
             {/* Background Image with Scrim */}
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-              style={{ backgroundImage: `url('/src/assets/images/wholesale_cold_storage_1793338243843.jpg')` }}
+              style={{ backgroundImage: `url('${images.wholesaleColdStorage}')` }}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A1614] via-[#1A1614]/70 to-transparent"></div>
             </div>

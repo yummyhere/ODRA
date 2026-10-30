@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, MapPin, Truck, ShieldCheck, CheckCircle2, AlertCircle, Send, Package, Clock, Utensils } from 'lucide-react';
+import { images } from '../assets/images';
 
 export const WholesalePage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +54,7 @@ export const WholesalePage: React.FC = () => {
         <div className="relative rounded-2xl overflow-hidden bg-[#1A1614] text-white p-8 sm:p-14 lg:p-16 mb-12 shadow-xl border border-stone-800">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: `url('/src/assets/images/wholesale_cold_storage_1793338243843.jpg')` }}
+            style={{ backgroundImage: `url('${images.wholesaleColdStorage}')` }}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#1A1614] via-[#1A1614]/90 to-transparent"></div>
 

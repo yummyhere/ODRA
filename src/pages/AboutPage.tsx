@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, ShieldCheck, Scissors, Store, Truck, ArrowRight } from 'lucide-react';
 import { useInquiry } from '../context/InquiryContext';
+import { images } from '../assets/images';
 
 export const AboutPage: React.FC = () => {
   const { setActiveNavTab } = useInquiry();
@@ -12,7 +13,7 @@ export const AboutPage: React.FC = () => {
         <div className="relative rounded-2xl overflow-hidden bg-[#1A1614] text-white p-8 sm:p-14 mb-12 shadow-xl border border-stone-800">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-35"
-            style={{ backgroundImage: `url('/src/assets/images/craft_butcher_work_1793338244517.jpg')` }}
+            style={{ backgroundImage: `url('${images.butcherCraft}')` }}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#1A1614] via-[#1A1614]/85 to-transparent"></div>
 
@@ -77,7 +78,7 @@ export const AboutPage: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="rounded-xl overflow-hidden shadow-xl border-4 border-white bg-white">
               <img
-                src="/src/assets/images/hero_butcher_counter_1793338241942.jpg"
+                src={images.butcherCounter}
                 alt="Odra butcher display counter"
                 className="w-full h-80 object-cover"
               />
@@ -108,7 +109,7 @@ export const AboutPage: React.FC = () => {
             <div className="rounded-xl overflow-hidden shadow-md bg-white border border-[#E8DFD3] group">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/src/assets/images/beef_steaks_cuts_1793338242259.jpg"
+                  src={images.beefSteaks}
                   alt="AAA Canadian Beef Steaks"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -126,7 +127,7 @@ export const AboutPage: React.FC = () => {
             <div className="rounded-xl overflow-hidden shadow-md bg-white border border-[#E8DFD3] group">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/src/assets/images/european_deli_meats_1793338242936.jpg"
+                  src={images.deliMeats}
                   alt="Artisanal European Deli Counter"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -144,7 +145,7 @@ export const AboutPage: React.FC = () => {
             <div className="rounded-xl overflow-hidden shadow-md bg-white border border-[#E8DFD3] group">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/src/assets/images/wholesale_cold_storage_1793338243843.jpg"
+                  src={images.wholesaleColdStorage}
                   alt="Commercial Wholesale Cold Room"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

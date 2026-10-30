@@ -1,6 +1,7 @@
 import React from 'react';
 import { Thermometer, ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
 import { useInquiry } from '../context/InquiryContext';
+import { images } from '../assets/images';
 
 export const QualityControlSection: React.FC = () => {
   const { setActiveNavTab } = useInquiry();
@@ -80,7 +81,7 @@ export const QualityControlSection: React.FC = () => {
         {/* Right Side: Imagery with Guarantee Stamp matching reference */}
         <div 
           className="lg:col-span-5 relative min-h-[380px] lg:min-h-full bg-cover bg-center flex items-center justify-center p-8"
-          style={{ backgroundImage: `url('/src/assets/images/beef_steaks_cuts_1793338242259.jpg')` }}
+          style={{ backgroundImage: `url('${images.beefSteaks}')` }}
         >
           <div className="absolute inset-0 bg-black/35"></div>
 

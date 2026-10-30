@@ -1,6 +1,7 @@
 import React from 'react';
 import { useInquiry } from '../context/InquiryContext';
 import { Phone, ArrowRight } from 'lucide-react';
+import { images } from '../assets/images';
 
 export const AboutStatsSection: React.FC = () => {
   const { setActiveNavTab } = useInquiry();
@@ -13,7 +14,7 @@ export const AboutStatsSection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white bg-stone-100">
               <img
-                src="/src/assets/images/craft_butcher_work_1793338244517.jpg"
+                src={images.butcherCraft}
                 alt="Master butcher hand trimming meat at Odra Deli & Wholesale Meat"
                 className="w-full h-[400px] sm:h-[480px] object-cover object-center"
               />

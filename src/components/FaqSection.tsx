@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, Phone } from 'lucide-react';
 import { useInquiry } from '../context/InquiryContext';
+import { images } from '../assets/images';
 
 interface FaqItem {
   question: string;
@@ -42,7 +43,7 @@ export const FaqSection: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="relative z-10 w-4/5 rounded-xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3]">
               <img
-                src="/src/assets/images/craft_butcher_work_1793338244517.jpg"
+                src={images.butcherCraft}
                 alt="Craft butchering at Odra"
                 className="w-full h-full object-cover"
               />
@@ -51,7 +52,7 @@ export const FaqSection: React.FC = () => {
             {/* Floater image overlapping */}
             <div className="absolute right-0 bottom-[-20px] z-20 w-3/5 rounded-xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
               <img
-                src="/src/assets/images/european_deli_meats_1793338242936.jpg"
+                src={images.deliMeats}
                 alt="European deli meats counter"
                 className="w-full h-full object-cover"
               />
